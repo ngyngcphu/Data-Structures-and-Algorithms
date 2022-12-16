@@ -81,8 +81,9 @@ public:
                 dlt = nullptr;
             }
         }
-        this->nover = 0;
+        delete[] srclst;
         this->srclst = nullptr;
+        this->nover = 0;
     }
     ~Graph()
     {
