@@ -1,5 +1,5 @@
-#ifndef HEAP_H
-#define HEAP_H
+#ifndef HEAP_H_
+#define HEAP_H_
 
 #include "main.h"
 
@@ -40,7 +40,6 @@ public:
     Heap(int* arr, int n)
     {
         this->buildHeap(arr, n);
-
     }
     ~Heap()
     {
@@ -180,4 +179,4 @@ public:
         delete[] this->arr;
     }
 };
-#endif //HEAP_H
+#endif //HEAP_H_

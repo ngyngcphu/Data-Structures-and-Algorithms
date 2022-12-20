@@ -178,11 +178,39 @@ void test5()
     */
 }
 
+void test6()
+{
+    char x[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
+    Graph* g = new Graph(x, 18);
+    g->addEdge_Direct(0, 1);
+    g->addEdge_Direct(0, 7);
+    g->addEdge_Direct(0, 14);
+    g->addEdge_Direct(1, 4);
+    g->addEdge_Direct(2, 3);
+    g->addEdge_Direct(2, 6);
+    g->addEdge_Direct(4, 5);
+    g->addEdge_Direct(5, 6);
+    g->addEdge_Direct(6, 9);
+    g->addEdge_Direct(7, 8);
+    g->addEdge_Direct(8, 11);
+    g->addEdge_Direct(8, 12);
+    g->addEdge_Direct(9, 12);
+    g->addEdge_Direct(10, 13);
+    g->addEdge_Direct(10, 17);
+    g->addEdge_Direct(11, 12);
+    g->addEdge_Direct(12, 15);
+    g->addEdge_Direct(12, 16);
+    g->addEdge_Direct(13, 16);
+    
+    g->topologicalSort(&Graph::print);
+}
+
 int main()
 {
     //test1();
     //test2();
     //test3();
     //test4();
-    test5();
+    //test5();
+    test6();
 }
